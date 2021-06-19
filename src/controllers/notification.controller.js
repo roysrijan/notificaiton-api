@@ -15,3 +15,15 @@ exports.sendNotification = catchAsync(async (req, res) => {
 		data: newNotification,
 	});
 });
+
+
+//======= Send Notification =======
+exports.historyNotification = catchAsync(async (req, res) => {
+	//let userId = req.decoded.sub;
+	let body = req.body;
+	const newNotification = await notificationService.historyNotification();
+	res.status(httpStatus.CREATED).send({
+		staus: 'OK',
+		data: newNotification,
+	});
+});

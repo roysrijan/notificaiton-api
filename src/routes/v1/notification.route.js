@@ -8,4 +8,10 @@ router.post(
 	controller.sendNotification
 );
 
+//======= Show Notification =======
+router.get(
+	"/history",
+	controller.historyNotification
+);
+
 module.exports = router;
