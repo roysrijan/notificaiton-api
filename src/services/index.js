@@ -1,2 +1,2 @@
 module.exports.notificationService = require("./notification.service");
-module.exports.socketService = require("./socket.service");
+module.exports.registrationService = require("./registration.service");
